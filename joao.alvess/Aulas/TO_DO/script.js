@@ -14,6 +14,7 @@ window.onload = function () {
         //Adicionar o valor do input no meu item da lista
         li.textContent = texto;
 
+        //Criação do botao remover
         const btnRemover = this.document.createElement("button");
         btnRemover.textContent = "x";
         btnRemover.addEventListener("click", () => {
@@ -25,7 +26,7 @@ window.onload = function () {
 
         //Adiciona o item na lista para ser apresentado
         lista.appendChild(li);
-
+l
         input.value = "";
 
         
