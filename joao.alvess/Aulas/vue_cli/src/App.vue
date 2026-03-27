@@ -1,21 +1,43 @@
 <template>
   <div>
     <img alt="Vue logo" src="./assets/logo.png"/>
-    <br>
-    <hr>
+    <h1>Meu App Vue</h1>
+    <p class="subtitulo">Meu subittulo</p>
+    <br/>
     <home-component/>
+    <br/>
     <hr>
-  
+    <usuario-component />  
+    <br>
+    <estilo-component/>
   </div>
 </template>
 
 <script>
 import HomeComponent from './components/HomeComponent.vue';
-
+import UsuarioComponent from './components/UsuarioComponent.vue';
+import EstiloComponent from './components/EstiloComponent.vue';
 
 export default {
-  name: 'App',
-  components: {HomeComponent},
+    name: 'App',
+    components: {
+    HomeComponent,
+    UsuarioComponent,
+    
+    },
+    created() {
+      console.log("created");
+    },
+    mounted() {
+      console.log("mounted");
+    },
+    updated(){
+      console.log("updated")
+    },
+    errorCaptured() {
+      console.log("errorCaptured")
+    },
+
 };
 </script>
 
@@ -28,4 +50,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
